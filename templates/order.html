@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+    <head>
+        <link rel="stylesheet" href="static/css/order.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Ordine</title>
+    </head>
+    <body>
+        {% if update %}
+        <p class="formError">{{ update }}</p>
+        <button onclick="location.href = '/';" id="goBack" class="goBack" >TORNA INDIETRO</button>
+        {% endif %}
+        {% if feedback %}
+        <p class="formError">{{ feedback }}</p>
+        <button onclick="location.href = '/';" id="goBack" class="goBack" >TORNA INDIETRO</button>
+        {% endif %}
+        {% if order %}
+        <p class="formSuccess">Ordine piazzato!</p>
+        <button onclick="location.href = '/';" id="goBackSuccess" class="goBack" >TORNA INDIETRO</button>
+        {% endif %}
+    </body>
+</html>

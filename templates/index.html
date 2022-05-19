@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+    <head>
+        <link rel="stylesheet" href="static/css/index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Hamburgers</title>
+    </head>
+    <body>
+        <h1 class="title">Ordinazione</h1>
+        <form id="form" method="POST" action="/order">
+            <div class="container">
+                <label for="name"><b>Nome</b></label>
+                <input type="text" value="" placeholder="Nome" name="name"><br>
+                <label for="lastName"><b>Cognome</b></label>
+                <input type="text" value="" placeholder="Cognome" name="lastName"><br>
+            </div>
+            <div class="container">
+                <label class="category"><b>Ingredienti</b></label><br>
+                <div class="ingredientsGrid">
+                    <label class="form-control" for="cipolla">
+                        <input type="checkbox" id="cipolla" name="cipolla">
+                        Cipolla
+                    </label>
+                    <label class="form-control" for="lattuga">
+                        <input type="checkbox" id="lattuga" name="lattuga">
+                        Insalata
+                    </label>
+                    <label class="form-control" for="pomodoro">
+                        <input type="checkbox" id="pomodoro" name="pomodoro">
+                        Pomodoro
+                    </label>
+                    <label class="form-control" for="uovo">
+                        <input type="checkbox" id="uovo" name="uovo">
+                        Uovo
+                    </label>
+                    <label class="form-control" for="cetriolo">
+                        <input type="checkbox" id="cetriolo" name="cetriolo">
+                        Cetriolo
+                    </label>
+                    <label class="form-control" for="cheddar">
+                        <input type="checkbox" id="cheddar" name="cheddar">
+                        Cheddar
+                    </label>
+                </div>
+                <label class="category"><b>Salse</b></label><br>  
+                <div class="saucesGrid">
+                    <label class="form-control" for="ketchup">
+                        <input type="checkbox" id="ketchup" name="ketchup">
+                        Ketchup
+                    </label>
+                    <label class="form-control" for="maionese">
+                        <input type="checkbox" id="maionese" name="maionese">
+                        Maionese
+                    </label>
+                </div>  
+                <input type="submit" value="CONFERMA" id="submitButton">          
+            </div>
+        </form>
+    </body>
+</html>

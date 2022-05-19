@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+
+body {font-family: 'Montserrat', Arial, Helvetica, sans-serif;}
+
+.title{
+    text-align: center;
+    font-size: 3em;
+    padding-bottom: 0.5em;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid rgb(48, 173, 65);
+    background-color: rgb(39, 214, 62);
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    box-sizing: border-box;
+    margin:auto;
+    margin-top: 6em;
+}
+
+.form-control {
+    font-family: system-ui, sans-serif;
+    font-size: 1em;
+    line-height: 1.1;
+    display: grid;
+    grid-template-columns: 1em auto;
+    gap: 0.5em;
+    margin-top: 0.7rem;
+}
+
+
+input[type="checkbox"] {
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid currentColor;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+}
+
+input[type="checkbox"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+    background-color: CanvasText;
+}
+
+input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+
+.container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.ingredientsGrid{
+    display: grid;
+    grid-gap: 0.5em;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.saucesGrid{
+    display: grid;
+    grid-gap: 0.5em;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.category{
+    display: block;
+    padding-top: 1.5rem;
+    margin-bottom: -0.8rem;
+}
+  

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+    <head>
+        <link rel="stylesheet" href="static/css/admin.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Dashboard</title>
+    </head>
+    <body>
+        {% if data %}
+        <div class="container">
+            <h1 class="title">Da servire</h1>
+            {% for document in data %}
+            <div class="container2">
+                <div class="order">
+                    <label>{{ document.name + ' ' +document.lastName}}</label><br>
+                    <label>{{document.ingredients}}</label>
+                </div>
+                <form method="POST" action="/admin" class="remove">
+                    <input type="hidden" value={{document._id}} name="id">
+                    <input type="submit" value="X">
+                </form>
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </body>
+</html>
